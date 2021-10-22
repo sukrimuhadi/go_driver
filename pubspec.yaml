@@ -32,6 +32,11 @@ dependencies:
   shared_preferences: ^0.5.7+2
   material_design_icons_flutter: ^4.0.5755
   google_fonts: ^1.1.0
+  http: ^0.12.0+2
+  fluttertoast: ^8.0.8
+  progress_dialog: ^1.2.4
+  # android_alarm_manager: ^0.4.5+11
+  splashscreen: ^1.2.0
 
 dev_dependencies:
   flutter_test:

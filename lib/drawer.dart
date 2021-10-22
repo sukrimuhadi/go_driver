@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sipimo_app/MainApp.dart';
 import 'package:sipimo_app/auth/login_screen.dart';
 
 class DrawerKeren extends StatelessWidget {
@@ -32,7 +33,10 @@ class DrawerKeren extends StatelessWidget {
             ),
             trailing: Icon(Icons.more_vert_outlined),
             title: Text('Home'),
-            onTap: () {},
+            onTap: () {
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) => MainScreen()));
+            },
           ),
           Divider(),
           ListTile(
@@ -50,11 +54,9 @@ class DrawerKeren extends StatelessWidget {
             ),
             title: Text('Logout'),
             onTap: () {
-              Navigator.of(context).push(new MaterialPageRoute<Null>(
-                  builder: (BuildContext context) {
-                    return LoginScreen();
-                  },
-                  fullscreenDialog: true));
+              Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => LoginScreen());
             },
           ),
         ],

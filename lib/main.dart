@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:sipimo_app/auth/login_screen.dart';
+import 'package:splashscreen/splashscreen.dart';
 
 void main() {
   //You will need to initialize AppThemeNotifier class for theme changes.
@@ -49,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   splashscreenStart() async {
-    var duration = const Duration(seconds: 7);
+    var duration = const Duration(seconds: 5);
     return Timer(duration, () {
       Navigator.push(
         context,
